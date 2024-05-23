@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='p-2 bg-red-400 hover:bg-red-500 w-full flex flex-col items-center justify-content-center'>
+    <footer className='p-2 bg-red-400 hover:bg-red-500 w-full flex flex-col items-center justify-content-center text-white'>
         <div className='flex flex-col items-center justify-content-center md:flex-row md:justify-between md:content-center md:gap-6'>
             <div className='flex flex-col items-center justify-content-center mb-4 md:mb-0'>
                 <img src="/public/logo_transparent.png" alt="Tienda Virtual USM" 

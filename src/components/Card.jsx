@@ -19,21 +19,22 @@ const Card = ()=>{
                 <span className='font-bold text-lg'>Disponibilidad: <strong className='text-red-500 hover:text-red-400 hover:text-sm'>100</strong></span>
             </div>
             <div className='mt-4 flex flex-col items-center justify-content-center'>
-            <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
+            <button className='bg-red-400 text-white hover:bg-red-500  font-bold py-2 px-4 rounded'
             onClick={()=>{setOpen(true)}}>
                 Agregar al carro de compra
             </button>
             <form className={`${open?'block':'hidden'} w-full max-w-xs `}>
-                <div className='flex items-center border-b border-teal-500 py-2'>
-                    <input className='appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none' type="number" placeholder="Ingrese Cantidad" aria-label="Ingrese Cantidad"
-                        min="1"
+                <div className='flex items-center border-b border-red-500 py-2'>
+                    <input  type='number' placeholder='Ingrese Cantidad' aria-label='Ingrese Cantidad' name='amount'
+                    className='appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none'
+                        min='1'
                     />
-                    <button className='flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded' type="button"
+                    <button className='flex-shrink-0 bg-red-400 hover:bg-red-500 text-sm  text-white py-1 px-2 rounded' type="button"
                         onClick={()=>{setOpen(false)}}
                     >
                         Agregar
                     </button>
-                    <button className='flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded' type="button"
+                    <button className='flex-shrink-0 border-transparent border-4 text-red-500 hover:text-teal-800 text-sm py-1 px-2 rounded' type="button"
                         onClick={()=>{setOpen(false)}}
                     >
                         Cancelar
